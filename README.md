@@ -1,4 +1,6 @@
-# Vangrant file for Modern.IE / Windows 10
+# Vangrant file for modernIE/w10-edge
+
+A Vagrant environment for Windows 10 + Microsoft Edge.
 
 ## How to use
 
