@@ -10,6 +10,5 @@ Vagrant.configure(2) do |config|
     vb.memory = 2048
     vb.customize ["modifyvm", :id, "--vram", "256", "--cpus", "2", "--ioapic", "on"]
     vb.gui = true
-    vb.linked_clone = true
   end
 end
