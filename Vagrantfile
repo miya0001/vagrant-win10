@@ -4,7 +4,7 @@
 Vagrant.require_version '>= 1.8'
 
 Vagrant.configure(2) do |config|
-  config.vm.box = "modernIE/w10-edge"
+  config.vm.box = "Microsoft/EdgeOnWindows10"
 
 
   if Vagrant.has_plugin?('vagrant-vbguest')
