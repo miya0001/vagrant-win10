@@ -6,11 +6,11 @@ Vagrant.require_version '>= 1.8'
 Vagrant.configure(2) do |config|
   config.vm.box = "Microsoft/EdgeOnWindows10"
   config.vm.box_version = "1.0"
-  config.vm.communicator = "winrm"
   config.vm.guest = :windows
+  config.vm.communicator = "winrm"
 
-  config.winrm.username = "vagrant"
-  config.winrm.password = "vagrant"
+  config.winrm.username = "IEUser"
+  config.winrm.password = "Passw0rd!"
 
   config.vm.provider "virtualbox" do |vb|
     vb.name = "win10"
