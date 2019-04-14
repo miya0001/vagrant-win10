@@ -8,6 +8,7 @@ Vagrant.configure(2) do |config|
   config.vm.box_version = "1.0"
   config.vm.guest = :windows
   config.vm.communicator = "winrm"
+  config.vm.synced_folder ".", "/vagrant", disabled: true
 
   config.winrm.username = "IEUser"
   config.winrm.password = "Passw0rd!"
